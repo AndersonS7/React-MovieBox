@@ -1,0 +1,10 @@
+.Container {
+    padding: 0% 10%;
+}
+
+.NavBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
