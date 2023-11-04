@@ -2,9 +2,9 @@ import ScoreCSS from "./Score.module.css";
 import Tomato from "../../../Assets/Icons/Tomato.png"
 import IMDb from "../../../Assets/Icons/IMDb.png"
 
-function Score() {
+function Score(props) {
     return (
-        <div className={ScoreCSS.Container}>
+    <div className={ScoreCSS.Container} style={{gap: `${props.gap}`}}>
             <div className={ScoreCSS.TomatoContent}>
                 <img src={IMDb} />
                 <p>86.0/100</p>

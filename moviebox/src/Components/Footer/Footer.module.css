@@ -1,0 +1,32 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    gap: 1.5rem;
+}
+
+.Container nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.Container nav a {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111827;
+}
+
+.Container nav a:hover {
+    color: #BE123C;
+}
+
+
+.Container span {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #6B7280;
+}

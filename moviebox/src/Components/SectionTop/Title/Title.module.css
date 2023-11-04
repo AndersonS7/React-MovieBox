@@ -1,18 +1,20 @@
 .TitleContainer {
-    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
     text-align: start;
     color: #fff;
-    margin-top: 18%;
+    width: 20rem;
+    margin-top: 15%;
 }
 
 .TitleContainer h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .TitleContainer p {
     font-size: 0.875rem;
-    margin-bottom: 1rem;
 }
 
 .TitleContainer a {
