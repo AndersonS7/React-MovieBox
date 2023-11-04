@@ -1,0 +1,57 @@
+.NavBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.SingIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.SingIn h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.SingIn button {
+    background-color: transparent;
+    border: none;
+}
+
+.InputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.InputContainer input{
+    height: 2.25rem;
+    width: 32.813rem;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 0 0.375rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.InputContainer input::placeholder {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.InputContainer .BtnSearch{
+    position: relative;
+    right: 7%;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: transparent;
+    border: none;
+}

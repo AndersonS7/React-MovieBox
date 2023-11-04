@@ -1,0 +1,29 @@
+.TitleContainer {
+    width: 20rem;
+    text-align: start;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.TitleContainer h2 {
+    font-size: 3rem;
+}
+
+.TitleContainer p {
+    font-size: 0.875rem;
+}
+
+.TitleContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 2.25rem;
+    width: 10.563rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #BE123C;
+    border-radius: 0.375rem;
+}

@@ -1,0 +1,12 @@
+.bg {
+    background-image: url("../../Assets/Imgs/Poster.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 50rem;
+    width: 100%;
+}
+
+.Content {
+    padding: 0 10%;
+}
