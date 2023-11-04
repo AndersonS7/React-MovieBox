@@ -6,7 +6,11 @@ function Title() {
     return (
         <div className={TitleCSS.TitleContainer}>
             <h2>John Wick 3: Parabellum</h2>
-            <Score/>
+            <Score
+                points="86.0"
+                pointsTomato="97"
+                gap="3rem"
+            />
             <p>
                 John Wick is on the run after killing a member of the international assassins' guild,
                 and with a $14 million price tag on his head, he is the target of hit men and women everywhere.

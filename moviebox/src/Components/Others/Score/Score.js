@@ -7,11 +7,11 @@ function Score(props) {
     <div className={ScoreCSS.Container} style={{gap: `${props.gap}`}}>
             <div className={ScoreCSS.TomatoContent}>
                 <img src={IMDb} />
-                <p>86.0/100</p>
+                <p>{props.points}/100</p>
             </div>
             <div className={ScoreCSS.IMDbContent}>
                 <img src={Tomato} />
-                <p>97%</p>
+                <p>{props.pointsTomato}%</p>
             </div>
         </div>
     )

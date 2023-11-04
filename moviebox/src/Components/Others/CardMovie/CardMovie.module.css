@@ -10,6 +10,8 @@
 .Container h2 {
     font-size: 1.125rem;
     font-weight: bold;
+    width: 15rem;
+    text-align: start;
 }
 
 .Container span {

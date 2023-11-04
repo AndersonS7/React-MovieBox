@@ -1,7 +1,6 @@
 import ContentFeedCSS from "../ContentFeedMovie/ContentFeedMovie.module.css"
 import ChevronLeft from "../../../Assets/Icons/ChevronLeft.png"
 import ChevronRight from "../../../Assets/Icons/ChevronRight.png"
-import CardMovie from "../../Others/CardMovie/CardMovie";
 
 function ContentFeedMovie(props) {
     return (
@@ -17,10 +16,7 @@ function ContentFeedMovie(props) {
                 </button>
 
                 <div className={ContentFeedCSS.Cards}>
-                    <CardMovie />
-                    <CardMovie />
-                    <CardMovie />
-                    <CardMovie />
+                    {props.children}
                 </div>
 
                 <button className={ContentFeedCSS.ChevronRight}>
