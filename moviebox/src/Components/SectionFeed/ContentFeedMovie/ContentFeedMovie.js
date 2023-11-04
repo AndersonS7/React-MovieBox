@@ -15,7 +15,8 @@ function ContentFeedMovie(props) {
                     <img src={ChevronLeft} />
                 </button>
 
-                <div className={ContentFeedCSS.Cards}>
+                {/* está recebendo os cards filhos que vem do feed */}
+                <div className={ContentFeedCSS.Cards} style={{ overflow: `${props.overflow}`, gap: `${props.gap}` }}>
                     {props.children}
                 </div>
 

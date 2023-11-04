@@ -6,7 +6,7 @@ function CardMovie(props) {
     return (
         <div className={CardMovieCSS.Container}>
             <img src={Favorite} className={CardMovieCSS.Favorite}/>
-            <img src={props.cover} />
+            <img src={props.cover} className={CardMovieCSS.imgCover} />
             <span>{props.date}</span>
             <h2>{props.title}</h2>
             <Score 

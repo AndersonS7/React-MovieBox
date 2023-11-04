@@ -122,7 +122,10 @@ function Feed() {
 
             {/* Exclusive Videos */}
             <ContentFeedMovie
-                title="Exclusive Videos">
+                title="Exclusive Videos"
+                overflow="hidden"
+                gap="3rem"
+            >
 
                 <CardVideo
                     cover={Lamb}

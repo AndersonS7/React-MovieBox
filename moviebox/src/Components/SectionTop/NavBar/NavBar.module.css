@@ -19,6 +19,7 @@
 }
 
 .SingIn button {
+    display: flex;
     background-color: transparent;
     border: none;
 }
