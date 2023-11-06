@@ -5,14 +5,16 @@ import Score from "../Score/Score.js"
 function CardMovie(props) {
     return (
         <div className={CardMovieCSS.Container}>
-            <img src={Favorite} className={CardMovieCSS.Favorite}/>
-            <img src={props.cover} className={CardMovieCSS.imgCover} />
+            <img src={Favorite} className={CardMovieCSS.Favorite} />
+            <div className={CardMovieCSS.imgCover}>
+                <img src={props.cover} />
+            </div>
             <span>{props.date}</span>
             <h2>{props.title}</h2>
-            <Score 
+            <Score
                 points={props.points}
                 pointsTomato={props.pointsTomato}
-            gap="35%"/>
+                gap="35%" />
             <span>{props.category}</span>
         </div>
     )

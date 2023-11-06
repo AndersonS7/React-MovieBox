@@ -25,3 +25,15 @@
     right: 6%;
     top: 3%;
 }
+
+.imgCover {
+    overflow: hidden;
+}
+
+.imgCover img {
+    transition: 0.3s;
+}
+
+.imgCover img:hover {
+    transform: scale(1.2);
+}

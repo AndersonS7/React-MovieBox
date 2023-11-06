@@ -8,9 +8,9 @@ function NavBar() {
     return (
         <header className={NavBarCSS.Container}> {/*REMOVER ESSE CONTAINER DESSE MODULO E ADICINAR EM UM MODULO GERAL */}
             <nav className={NavBarCSS.NavBarContainer}>
-                <div>
+                <a href="#">
                     <img src={Logo} alt="Um círculo vermelha com um pequeno simbolo de uma tv no centro, e com o nome MovieBox ao lado, representando a logo"></img>
-                </div>
+                </a>
                 <div className={NavBarCSS.InputContainer}>
                     <input placeholder="What do you want to watch?" />
                     <button type="submit" className={NavBarCSS.BtnSearch}>
@@ -18,10 +18,7 @@ function NavBar() {
                     </button>
                 </div>
                 <div className={NavBarCSS.SingIn}>
-                    <h2>Sign In</h2>
-                    <button>
-                        <img src={ImgMenu} alt="Um circulo vervemelho com dois traços brancos ao centro"></img>
-                    </button>
+                    <button>Sign In</button>
                 </div>
             </nav>
         </header>
