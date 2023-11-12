@@ -52,3 +52,26 @@
     background-color: transparent;
     border: none;
 }
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+    .NavBarContainer {
+        position: relative;
+    }
+
+    .NavBarContainer>a>img {
+        transform: scale(0.8);
+    }
+
+    .InputContainer>input {
+        display: none;
+    }
+
+    .InputContainer>button>img {
+        display: none;
+    }
+
+    .SingIn>button {
+        width: 4rem;
+    }
+}

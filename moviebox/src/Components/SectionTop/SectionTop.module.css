@@ -11,3 +11,23 @@
 .Content {
     padding: 0 10%;
 }
+
+/* TELAS PEQUENAS */
+@media (max-width: 490px) {
+    .bg {
+        background-image: url("../../Assets/Imgs/Poster.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top center;
+
+        height: 100vh;
+        width: 100%;
+    }
+
+    .Content {
+        padding: 0 5%;
+        background: #141313;
+        background: linear-gradient(180deg, #141313 0%, #362e2d 35%, #ffffff 100%);
+        height: 100vh;
+    }
+}

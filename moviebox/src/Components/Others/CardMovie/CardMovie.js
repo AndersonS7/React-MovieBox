@@ -10,7 +10,7 @@ function CardMovie(props) {
     return (
         <div>
             <div className={CardMovieCSS.Container} onClick={() => setOpenModal(true)}>
-                <img src={Favorite} className={CardMovieCSS.Favorite} />
+                {/* <img src={Favorite} className={CardMovieCSS.Favorite} /> */}
                 <div className={CardMovieCSS.imgCover}>
                     <img src={props.cover} />
                 </div>
@@ -25,15 +25,21 @@ function CardMovie(props) {
 
             {/* MODAL DE INFORMAÇÕES */}
             <InfoCard isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)}>
-                <div className={CardMovieCSS.imgCover}>
-                    <img src={props.cover} />
+                <img src={props.cover} />
+                <div>
+                    <h2>{props.title}</h2>
+                    <span>{props.category} | </span>
+                    <span>{props.date}</span>
                 </div>
-                <h2>{props.title}</h2>
-                <span>{props.category}</span> | <span>{props.date}</span>
                 <p>
-                    Adicionar aqui a descrição uma descrição bem legal do filme...
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget tortor nisi. Duis eu magna mollis sem pretium viverra. Suspendisse consectetur sollicitudin elit ac laoreet.
+                    Vestibulum et urna orci. Donec enim ex, tempor in mollis eget, tempor vitae lacus. Vivamus efficitur purus metus, eu feugiat ipsum imperdiet non.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean fermentum vel enim ac tincidunt.
+                    Cras augue turpis, venenatis id ex sed, semper venenatis lacus.
                 </p>
-                <p>Autores: Autor 1, Autor 2, Autor 3</p>
+                <span>
+                    <p>Autor: Autor De um Filme</p>
+                </span>
             </InfoCard>
         </div>
     )

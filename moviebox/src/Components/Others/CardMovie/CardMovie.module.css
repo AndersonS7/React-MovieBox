@@ -37,3 +37,24 @@
 .imgCover img:hover {
     transform: scale(1.2);
 }
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+
+    .Container {
+        gap: 0.3rem;
+        width: 90%;
+    }
+
+    .Container h2 {
+        font-size: 1rem;
+    }
+
+    .Container span {
+        font-size: 0.7rem;
+    }
+
+    .imgCover img {
+        width: 100%;
+    }
+}

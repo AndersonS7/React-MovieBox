@@ -1,7 +1,6 @@
 import React from "react";
 import NavBarCSS from "./NavBar.module.css"
 import Logo from "../../../Assets/Imgs/Logo.png"
-import ImgMenu from "../../../Assets/Icons/Menu.png"
 import Search from "../../../Assets/Icons/Search.png"
 
 function NavBar() {

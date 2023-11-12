@@ -3,14 +3,38 @@
     width: 100%;
 }
 
-.TomatoContent, .IMDbContent {
+.TomatoContent,
+.IMDbContent {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.675rem;
 }
 
-.TomatoContent p, .IMDbContent p{
+.TomatoContent p,
+.IMDbContent p {
     margin: 0;
     padding: 0;
+}
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+
+    .TomatoContent,
+    .IMDbContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .TomatoContent p,
+    .IMDbContent p {
+        font-size: 0.8rem;
+    }
+
+    .TomatoContent img,
+    .IMDbContent img {
+        transform: scale(0.8);
+    }
 }

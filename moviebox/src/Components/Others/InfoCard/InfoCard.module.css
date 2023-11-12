@@ -13,6 +13,62 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 150px;
+    height: 80%;
+    width: 40%;
     background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: auto;
+}
+
+.Content {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.Content>div>h2 {
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.Content>div>span {
+    color: #9CA3AF;
+    font-size: 1rem;
+}
+
+.Content>p {
+    width: 80%;
+    padding-top: 1.2rem;
+    margin: auto;
+}
+
+.Content>span>p {
+    color: #9CA3AF;
+    padding-top: 2rem;
+}
+
+.Modal>.Close {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9CA3AF;
+    transition: 0.3s;
+}
+
+.Modal>.Close:hover {
+    font-weight: bold;
+    color: tomato;
+    transform: scale(1.2);
+}
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+    .Modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        max-width: none;
+    }
 }

@@ -37,3 +37,14 @@
     font-weight: bold;
     width: 13rem;
 }
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+    .TitleContainer {
+        margin-top: 50%;
+    }
+
+    .TitleContainer h2 {
+        font-size: 2rem;
+    }
+}

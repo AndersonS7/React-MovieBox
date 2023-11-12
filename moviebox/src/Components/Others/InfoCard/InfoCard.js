@@ -6,11 +6,10 @@ function InfoCard({ isOpen, setModalOpen, children }) {
         return (
             <div className={InfoCardCSS.Container}>
                 <div className={InfoCardCSS.Modal}>
-                    <div>
+                    <div className={InfoCardCSS.Content}>
                         {children}
                     </div>
-
-                    <button onClick={setModalOpen}>Fechar Modal</button>
+                    <button className={InfoCardCSS.Close} onClick={setModalOpen}>X</button>
                 </div>
             </div>
         )
