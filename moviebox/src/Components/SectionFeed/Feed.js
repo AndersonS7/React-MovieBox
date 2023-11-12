@@ -123,7 +123,7 @@ function Feed() {
             {/* Exclusive Videos */}
             <ContentFeedMovie
                 title="Exclusive Videos"
-                overflow="hidden"
+                overflow="auto"
                 gap="3rem"
             >
 
@@ -144,7 +144,7 @@ function Feed() {
 
             </ContentFeedMovie>
 
-            {/* Exclusive Videos */}
+            {/* Exclusive autores */}
             <ContentFeedMovie
                 title="Featured Casts">
 

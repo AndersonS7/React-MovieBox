@@ -10,3 +10,10 @@
     font-weight: bold;
     text-align: start;
 }
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+    .Container img {
+        margin-right: 5%;
+    }
+}

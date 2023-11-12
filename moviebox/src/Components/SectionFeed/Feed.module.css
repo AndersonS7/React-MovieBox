@@ -1,5 +1,11 @@
 .Container {
     padding: 0 10%;
     margin-top: 5rem;
-    
+}
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+    .Container {
+        padding: 0 5%;
+    }
 }

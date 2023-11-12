@@ -30,3 +30,21 @@
     font-weight: bold;
     color: #6B7280;
 }
+
+/* TELAS MENORES */
+@media (max-width: 490px) {
+
+    .Container nav a {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .Container nav {
+        display: flex;
+        gap: 1.5rem;
+    }
+    
+    .Container span {
+        font-size: 1rem;
+    }
+}

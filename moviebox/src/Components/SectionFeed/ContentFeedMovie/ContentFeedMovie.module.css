@@ -64,6 +64,10 @@
 /* TELAS MENORES */
 @media (max-width: 490px) {
 
+    .Container {
+        margin-bottom: 4rem
+    }
+
     .Title h2 {
         font-size: 1.25rem;
     }
@@ -80,5 +84,4 @@
     .CardsContainer .ChevronLeft {
         display: none;
     }
-
 }
