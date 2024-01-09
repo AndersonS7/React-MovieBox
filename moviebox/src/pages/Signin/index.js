@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
-import * as C from "./style";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+
+import stylesCSS from "./index.module.css";
 
 const Signin = () => {
     const { signin } = useAuth();
@@ -30,32 +31,32 @@ const Signin = () => {
     }
 
     return (
-        <C.Container>
-            <C.Label>SISTEMA DE LOGIN</C.Label>
-            <C.Content>
-                <Input
+        <div className={stylesCSS.container}>
+            <h2 className={stylesCSS.txtTitle}>ENTRAR EM MOVIEBOX</h2>
+            <div className={stylesCSS.content}>
+                <input className={stylesCSS.txtPlace}
                     type="email"
                     placeholder="Digite seu E-mail"
                     value={email}
                     onChange={(e) => [setEmail(e.target.value), setError("")]}
                 />
 
-                <Input
+                <input className={stylesCSS.txtPlace}
                     type="password"
                     placeholder="Digite sua senha"
                     value={senha}
                     onChange={(e) => [setSenha(e.target.value), setError("")]}
                 />
-                <C.labelError>{error}</C.labelError>
+                <span className={stylesCSS.msgError}>{error}</span >
                 <Button Text="Entrar" onClick={handleLogin} />
-                <C.LabelSignup>
-                    Não tem uma conta?
-                    <C.Strong>
+                <div className={stylesCSS.txtLabel}>
+                    <p>Não tem uma conta?</p>
+                    <div className={stylesCSS.msgStrong}>
                         <Link to="/signup">&nbsp; Registre-se</Link>
-                    </C.Strong>
-                </C.LabelSignup>
-            </C.Content>
-        </C.Container>
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 
