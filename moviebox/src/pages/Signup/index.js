@@ -12,10 +12,16 @@ const Signup = () => {
     const [senha, setSenha] = useState("");
     const [error, setError] = useState("");
     const navigate = useNavigate();
-
     const { signup } = useAuth();
 
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     const handleSignup = () => {
+        if (!regex.test(email)) {
+            setError("Informe um e-mail válido");
+            return;
+        }
+
         if (!email | !emailConf | !senha) {
             setError("Preencha todos os campos");
             return;
