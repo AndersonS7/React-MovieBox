@@ -3,7 +3,14 @@ import NavBarCSS from "./NavBar.module.css"
 import Logo from "../../../Assets/Imgs/Logo.png"
 import Search from "../../../Assets/Icons/Search.png"
 
+import { useNavigate } from "react-router-dom";
+import Button from "../../Button";
+import useAuth from "../../../hooks/useAuth";
+
 function NavBar() {
+    const { signout } = useAuth();
+    const navigate = useNavigate();
+
     return (
         <header className={NavBarCSS.Container}> {/*REMOVER ESSE CONTAINER DESSE MODULO E ADICINAR EM UM MODULO GERAL */}
             <nav className={NavBarCSS.NavBarContainer}>
@@ -16,9 +23,12 @@ function NavBar() {
                         <img src={Search} alt="icone de uma lupa branca"></img>
                     </button>
                 </div>
-                <div className={NavBarCSS.SingIn}>
+                <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
+                    Sair
+                </Button>
+                {/* <div className={NavBarCSS.SingIn}>
                     <button>Sign In</button>
-                </div>
+                </div> */}
             </nav>
         </header>
     )

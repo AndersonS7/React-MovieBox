@@ -1,14 +1,15 @@
 import './App.css';
-import Footer from './Components/Footer/Footer.js';
-import Feed from './Components/SectionFeed/Feed.js';
-import SectionTop from './Components/SectionTop/SectionTop.js';
+import GlobalStyle from "./styles/global";
+import RoutesApp from "./routes";
+import { AuthProvider } from "./contexts/auth";
 
 function App() {
   return (
     <div className="App">
-      <SectionTop />
-      <Feed />
-      <Footer />
+      <AuthProvider>
+            <RoutesApp />
+            <GlobalStyle />
+        </AuthProvider>
     </div>
   );
 }
