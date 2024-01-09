@@ -26,9 +26,6 @@ function NavBar() {
                 <Button Text="Sair" onClick={() => [signout(), navigate("/")]}>
                     Sair
                 </Button>
-                {/* <div className={NavBarCSS.SingIn}>
-                    <button>Sign In</button>
-                </div> */}
             </nav>
         </header>
     )

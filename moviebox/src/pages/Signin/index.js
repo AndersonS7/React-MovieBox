@@ -32,16 +32,16 @@ const Signin = () => {
 
     return (
         <div className={stylesCSS.container}>
-            <h2 className={stylesCSS.txtTitle}>ENTRAR EM MOVIEBOX</h2>
+            <h2 className={stylesCSS.txtTitle}>MOVIEBOX</h2>
             <div className={stylesCSS.content}>
-                <input className={stylesCSS.txtPlace}
+                <Input className={stylesCSS.txtPlace}
                     type="email"
                     placeholder="Digite seu E-mail"
                     value={email}
                     onChange={(e) => [setEmail(e.target.value), setError("")]}
                 />
 
-                <input className={stylesCSS.txtPlace}
+                <Input className={stylesCSS.txtPlace}
                     type="password"
                     placeholder="Digite sua senha"
                     value={senha}

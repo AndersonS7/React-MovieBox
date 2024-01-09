@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Input from "../../Components/Input";
 import Button from "../../Components/Button";
-import * as C from "./style";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
+import stylesCSS from "./index.module.css";
 
 const Signup = () => {
     const [email, setEmail] = useState("");
@@ -36,39 +36,39 @@ const Signup = () => {
     }
 
     return (
-        <C.Container>
-            <C.Label>SISTEMA DE LOGIN</C.Label>
-            <C.Content>
-                <Input
+        <div className={stylesCSS.container}>
+            <h2 className={stylesCSS.txtTitle}>CRIE SUA CONTA</h2>
+            <div className={stylesCSS.content}>
+                <Input className={stylesCSS.txtPlace}
                     type="email"
                     placeholder="Digite seu E-mail"
                     value={email}
                     onChange={(e) => [setEmail(e.target.value), setError("")]}
                 />
 
-                <Input
+                <Input className={stylesCSS.txtPlace}
                     type="email"
                     placeholder="Confirme seu E-mail"
                     value={emailConf}
                     onChange={(e) => [setEmailConf(e.target.value), setError("")]}
                 />
 
-                <Input
+                <Input className={stylesCSS.txtPlace}
                     type="password"
                     placeholder="Digite sua senha"
                     value={senha}
                     onChange={(e) => [setSenha(e.target.value), setError("")]}
                 />
-                <C.labelError>{error}</C.labelError>
+                <span className={stylesCSS.msgError}>{error}</span >
                 <Button Text="Inscrever-se" onClick={handleSignup} />
-                <C.LabelSignin>
-                    Já tem uma conta?
-                    <C.Strong>
+                <div className={stylesCSS.txtLabel}>
+                    <p>Já tem uma conta?</p>
+                    <div className={stylesCSS.msgStrong}>
                         <Link to="/">&nbsp; Entre</Link>
-                    </C.Strong>
-                </C.LabelSignin>
-            </C.Content>
-        </C.Container>
+                    </div>
+                </div>
+            </div>
+        </div >
     );
 };
 

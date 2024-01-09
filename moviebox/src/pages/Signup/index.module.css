@@ -1,15 +1,14 @@
-import styled from "styled-components";
-
-export const Container = styled.div`
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
     height: 100vh;
-`
+    background-color: #f0f2f5;
+}
 
-export const Content = styled.div`
+.content {
     gap: 15px;
     display: flex;
     align-items: center;
@@ -21,28 +20,43 @@ export const Content = styled.div`
     max-width: 350px;
     padding: 20px;
     border-radius: 5px;
-`
+}
 
-export const Label = styled.label `
+.txtTitle {
     font-size: 18px;
     font-weight: 600;
-    color: #676767
-`
-export const LabelSignin = styled.label `
+    color: #676767;
+}
+
+.txtLabel {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #676767;
+    width: 100%;
+}
+
+.txtPlace {
     font-size: 16px;
     color: #676767
-`
+}
 
-export const labelError = styled.label `
+.msgError {
     font-size: 14px;
-    color: red;
-`;
+    color: #BE123C;
+}
 
-export const Strong = styled.strong `
+.msgStrong {
     cursor: poiter;
+    font-weight: 600;
+}
 
-    a {
-        text-decoration: none;
-        color: #676767
-    }
-`;
+.msgStrong a {
+    text-decoration: none;
+    color: #676767
+}
+
+.msgStrong a:hover {
+    text-decoration: none;
+    color: #BE123C
+}
